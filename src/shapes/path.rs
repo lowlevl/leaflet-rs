@@ -1,4 +1,3 @@
-use js_sys::Object;
 use wasm_bindgen::prelude::*;
 
 use crate::{create_object_with_properties, Layer};

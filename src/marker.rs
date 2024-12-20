@@ -4,7 +4,6 @@ use crate::evented::{
 use crate::{
     create_object_with_properties, Evented, Handler, Icon, LatLng, Layer, LayerEvents, Point,
 };
-use js_sys::Object;
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]

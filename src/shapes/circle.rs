@@ -1,4 +1,3 @@
-use js_sys::Object;
 use std::ops::DerefMut;
 use wasm_bindgen::prelude::*;
 

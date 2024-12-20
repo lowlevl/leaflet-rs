@@ -1,4 +1,3 @@
-use js_sys::Object;
 use url::{ParseError, Url};
 use wasm_bindgen::prelude::*;
 

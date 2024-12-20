@@ -1,5 +1,4 @@
 use crate::{create_object_with_properties, Point};
-use js_sys::Object;
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]

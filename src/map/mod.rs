@@ -3,7 +3,7 @@ mod geolocation;
 mod location_event;
 mod other;
 
-use js_sys::{Array, Object};
+use js_sys::Array;
 use wasm_bindgen::prelude::*;
 use web_sys::HtmlElement;
 

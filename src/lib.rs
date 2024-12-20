@@ -1,3 +1,5 @@
+#![allow(clippy::missing_panics_doc)]
+
 mod control;
 mod crs;
 mod div_icon;
@@ -43,6 +45,7 @@ pub use icon::{Icon, IconOptions};
 pub use lat_lng::LatLng;
 pub use lat_lng_bounds::LatLngBounds;
 pub use layer::{Layer, LayerOptions};
+pub use layer_control::{LayerControl, LayerControlOptions};
 pub use layer_group::LayerGroup;
 pub use map::{
     DragEndEvent, ErrorEvent, LocateOptions, LocationEvent, Map, MapOptions, MouseEvent,
@@ -94,7 +97,7 @@ macro_rules! create_object_with_properties {
         $crate::paste! {
             #[wasm_bindgen]
             extern "C" {
-                #[wasm_bindgen (extends = Object , js_name = $t_js)]
+                #[wasm_bindgen (extends = ::js_sys::Object, js_name = $t_js)]
                 #[derive(Debug, Clone, PartialEq, Eq)]
                 pub type $t;
 
@@ -113,7 +116,7 @@ macro_rules! create_object_with_properties {
             #[allow(clippy::new_without_default)]
             #[must_use] pub fn new() -> Self {
                 #[allow(unused_mut)]
-                let mut r = JsCast::unchecked_into(Object::new());
+                let mut r = JsCast::unchecked_into(::js_sys::Object::new());
                 r
             }
         }
@@ -141,7 +144,7 @@ macro_rules! create_object_with_properties {
             #[allow(clippy::new_without_default)]
             #[must_use] pub fn new() -> Self {
                 #[allow(unused_mut)]
-                let mut r = JsCast::unchecked_into(Object::new());
+                let mut r = JsCast::unchecked_into(::js_sys::Object::new());
                 r
             }
         }
